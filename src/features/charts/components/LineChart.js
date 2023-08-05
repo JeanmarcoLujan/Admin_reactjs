@@ -52,7 +52,7 @@ function LineChart(){
   
 
     return(
-      <TitleCard title={"Montly Active Users (in k)"} >
+      <TitleCard title={"Sede 3"} >
           <Line data={data} options={options}/>
       </TitleCard>
     )

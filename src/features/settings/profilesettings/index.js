@@ -14,7 +14,7 @@ function ProfileSettings(){
 
     // Call API to update profile settings changes
     const updateProfile = () => {
-        dispatch(showNotification({message : "Profile Updated", status : 1}))    
+        dispatch(showNotification({message : "Perfil", status : 1}))    
     }
 
     const updateFormValue = ({updateType, value}) => {

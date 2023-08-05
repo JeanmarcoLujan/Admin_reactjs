@@ -56,7 +56,7 @@ function DoughnutChart(){
       };
 
     return(
-        <TitleCard title={"Orders by Category"}>
+        <TitleCard title={"Sede 1"}>
                 <Doughnut options={options} data={data} />
         </TitleCard>
     )

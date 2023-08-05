@@ -46,7 +46,7 @@ function Team(){
     return(
         <>
             
-            <TitleCard title="Active Members" topMargin="mt-2" TopSideButtons={<TopSideButtons />}>
+            <TitleCard title="Gestion de  permisos y roles" topMargin="mt-2" TopSideButtons={<TopSideButtons />}>
 
                 {/* Team Member list in table format loaded constant */}
             <div className="overflow-x-auto w-full">

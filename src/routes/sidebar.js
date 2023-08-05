@@ -25,36 +25,66 @@ const submenuIconClasses = `h-5 w-5`
 const routes = [
 
   {
-    path: '/app/dashboard',
+    path: '/app/charts',
     icon: <Squares2X2Icon className={iconClasses}/>, 
     name: 'Dashboard',
   },
   {
-    path: '/app/leads', // url
-    icon: <InboxArrowDownIcon className={iconClasses}/>, // icon component
-    name: 'Leads', // name that appear in Sidebar
+    path: '', // url
+    icon: <DocumentDuplicateIcon className={`${iconClasses} inline` }/>, // icon component
+    name: 'Ventas', // name that appear in Sidebar
+    submenu : [
+      {
+        path: '/app/leads', //url
+        icon:  <InboxArrowDownIcon className={iconClasses}/>,
+        name: 'Clientes', // name that appear in Sidebar
+      },
+      {
+        path: '/app/settings-billing',
+        icon: <WalletIcon className={submenuIconClasses}/>,
+        name: 'Ventas',
+      }
+    ]
   },
   {
-    path: '/app/transactions', // url
-    icon: <CurrencyDollarIcon className={iconClasses}/>, // icon component
-    name: 'Transactions', // name that appear in Sidebar
+    path: '', // url
+    icon: <DocumentDuplicateIcon className={`${iconClasses} inline` }/>, // icon component
+    name: 'Compras', // name that appear in Sidebar
+    submenu : [
+      {
+        path: '/app/leads1', //url
+        icon:  <InboxArrowDownIcon className={iconClasses}/>,
+        name: 'Proveedores', // name that appear in Sidebar
+      },
+      {
+        path: '/app/transactions',
+        icon: <CurrencyDollarIcon className={iconClasses}/>,
+        name: 'Compras',
+      }
+    ]
   },
   {
-    path: '/app/charts', // url
-    icon: <ChartBarIcon className={iconClasses}/>, // icon component
-    name: 'Analytics', // name that appear in Sidebar
+    path: '', //no url needed as this has submenu
+    icon: <DocumentTextIcon className={`${iconClasses} inline` }/>, // icon component
+    name: 'Inventario', // name that appear in Sidebar
+    submenu : [
+      {
+        path: '/app/getting-started', // url
+        icon: <DocumentTextIcon className={submenuIconClasses}/>, // icon component
+        name: 'Productos', // name that appear in Sidebar
+      },
+      {
+        path: '/app/features',
+        icon: <TableCellsIcon className={submenuIconClasses}/>, 
+        name: 'Servicios',
+      },
+      {
+        path: '/app/components',
+        icon: <CodeBracketSquareIcon className={submenuIconClasses}/>, 
+        name: 'Reportes',
+      }
+    ]
   },
-  {
-    path: '/app/integration', // url
-    icon: <BoltIcon className={iconClasses}/>, // icon component
-    name: 'Integration', // name that appear in Sidebar
-  },
-  {
-    path: '/app/calendar', // url
-    icon: <CalendarDaysIcon className={iconClasses}/>, // icon component
-    name: 'Calendar', // name that appear in Sidebar
-  },
-
   {
     path: '', //no url needed as this has submenu
     icon: <DocumentDuplicateIcon className={`${iconClasses} inline` }/>, // icon component
@@ -97,11 +127,7 @@ const routes = [
         icon: <UserIcon className={submenuIconClasses}/>, // icon component
         name: 'Profile', // name that appear in Sidebar
       },
-      {
-        path: '/app/settings-billing',
-        icon: <WalletIcon className={submenuIconClasses}/>,
-        name: 'Billing',
-      },
+
       {
         path: '/app/settings-team', // url
         icon: <UsersIcon className={submenuIconClasses}/>, // icon component
@@ -109,28 +135,7 @@ const routes = [
       },
     ]
   },
-  {
-    path: '', //no url needed as this has submenu
-    icon: <DocumentTextIcon className={`${iconClasses} inline` }/>, // icon component
-    name: 'Documentation', // name that appear in Sidebar
-    submenu : [
-      {
-        path: '/app/getting-started', // url
-        icon: <DocumentTextIcon className={submenuIconClasses}/>, // icon component
-        name: 'Getting Started', // name that appear in Sidebar
-      },
-      {
-        path: '/app/features',
-        icon: <TableCellsIcon className={submenuIconClasses}/>, 
-        name: 'Features',
-      },
-      {
-        path: '/app/components',
-        icon: <CodeBracketSquareIcon className={submenuIconClasses}/>, 
-        name: 'Components',
-      }
-    ]
-  },
+  
   
 ]
 

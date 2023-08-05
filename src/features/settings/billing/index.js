@@ -40,7 +40,7 @@ function Billing(){
     return(
         <>
             
-            <TitleCard title="Billing History" topMargin="mt-2">
+            <TitleCard title="Ventas" topMargin="mt-2">
 
                 {/* Invoice list in table format loaded constant */}
             <div className="overflow-x-auto w-full">

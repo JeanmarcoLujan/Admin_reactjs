@@ -13,7 +13,7 @@ const TopSideButtons = () => {
     const dispatch = useDispatch()
 
     const openAddNewLeadModal = () => {
-        dispatch(openModal({title : "Nuevo cliente", bodyType : MODAL_BODY_TYPES.LEAD_ADD_NEW}))
+        dispatch(openModal({title : "Nuevo proveedor", bodyType : MODAL_BODY_TYPES.LEAD_ADD_NEW}))
     }
 
     return(
@@ -23,7 +23,7 @@ const TopSideButtons = () => {
     )
 }
 
-function Leads(){
+function Leads1(){
 
     const {leads } = useSelector(state => state.lead)
     const dispatch = useDispatch()
@@ -50,7 +50,7 @@ function Leads(){
     return(
         <>
             
-            <TitleCard title="Clientes" topMargin="mt-2" TopSideButtons={<TopSideButtons />}>
+            <TitleCard title="Proveedores" topMargin="mt-2" TopSideButtons={<TopSideButtons />}>
 
                 {/* Leads List in table format loaded from slice after api call */}
             <div className="overflow-x-auto w-full">
@@ -101,4 +101,4 @@ function Leads(){
 }
 
 
-export default Leads
+export default Leads1
